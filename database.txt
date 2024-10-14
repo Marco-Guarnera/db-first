@@ -1,0 +1,18 @@
+Table name: used_cars
+
+id                      BIGINT                  PRIMARY_KEY AUTO_INCREMENT
+car_manufacturer        VARCHAR(255)            NOT_NULL
+car_model               VARCHAR(255)            NOT_NULL
+motor                   VARCHAR(255)            NULL
+power_supply_type       VARCHAR(255)            NULL
+production_year         YEAR                    NULL
+description             TEXT                    NULL
+price                   UNSIGNED FLOAT(10, 2)   NOT_NULL
+traction_type           VARCHAR(255)            NULL
+transmission            VARCHAR(255)            NULL
+average_consumption     UNSIGNED FLOAT(3, 1)    NULL
+length                  UNSIGNED SMALLINT       NULL
+width                   UNSIGNED SMALLINT       NULL
+height                  UNSIGNED SMALLINT       NULL
+weight                  UNSIGNED SMALLINT       NULL
+available               BOOLEAN                 NOT_NULL DEFAULT(true)
